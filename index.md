@@ -10,3 +10,10 @@ Why I Like it
 1. Rice
 
 Made with `Markdown`
+
+
+**CSE 15L Spring 2022 Announcement**
+
+### We will be using [__Autograder__]( https://autograder.ucsd.edu) as the student queue during TA/tutor office hours.
+
+### Have a _nice_ week!
