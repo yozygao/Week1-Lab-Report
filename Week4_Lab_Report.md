@@ -33,7 +33,6 @@ Link to my [second test file](https://github.com/yozygao/markdown-parser/blob/ma
 The code goes into an infinite loop as current index because once it goes through one iteration of the while loop, `closeParen` gets set to `-1`, which makes the `index` to never increment. If it never increments, the while loops goes on forever, which is whar causes that error. I fixed this by adding a check if `openBracket`, `closeBracket`, `openParen`, or `closeParen` were ever set to `-1`, then break the loop. 
 
 ## __My Third Code Change__
-
 ![](Fail3.jpg)
 
 Link to my [third test file](https://github.com/yozygao/markdown-parser/blob/main/test-file3.md)
