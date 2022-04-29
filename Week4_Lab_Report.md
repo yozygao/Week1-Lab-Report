@@ -34,7 +34,7 @@ The code goes into an infinite loop as current index because once it goes throug
 
 ## __My Third Code Change__
 
-![](Fail3.jpg)
+![](Fail3.JPG)
 Link to my [third test file](https://github.com/yozygao/markdown-parser/blob/main/test-file3.md)
 
 ### _Output of Running the File_
