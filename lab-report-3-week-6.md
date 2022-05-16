@@ -43,11 +43,9 @@ Here, I show the `markdown-parser` directory that I copied into the remote compu
 
 After copying the `markdown-parser` directory into the terminal, I am able to compile and run the tests within the remote computer. Since the remote computer is Linux-based, I use the Linux/Mac commands to run the tests. 
 
-![](one_line1.JPG)
-![](one_line2.JPG)
+![](one_line1.1.JPG)
+![](one_line1.2.JPG)
 
-I was unable to use only one line to run the tests as there was an `Unsupported Class` error when I tried to do it all on one line. This was the command I used:
+`scp -r . ieng6:markdown-parse2; ssh ieng6 "cd markdown-parse2; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
 
-`scp -r . ieng6:markdown-parse2; ssh ieng6 "cd markdown-parse2; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
-
-Instead, I split that line into two lines. The first line copied the directory and logged into the remote computer. The second line moved into `markdown-parse2` and compiled and ran the tests. 
+I used the above command to copy the markdown parser and run the tests in one line. There was some troubleshooting when I ran into the `Unsupported Class` error, but throught Piazza, this is now fixed and everything works as intended by using `;` and `""`.
