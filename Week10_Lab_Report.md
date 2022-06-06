@@ -11,7 +11,7 @@ I believe my version of MarkdownParse is correct because according to the [Commo
 The left side is the given MarkdownParse's result and the right is my personal MarkdownParse. This will be the same for any other screenshot that is meant to compare the two results. 
 
 For the given implementation, I think the bug with the code is that it doesn't check whether there is a line break or not when making a link. Though I'm not sure how check for a line break, you most likely have to check for it at the end. I suggest checking it here
-![](fix_first_where.JPG)
+![](fix_third_where.JPG)
 
 right before the else statement and adding an if statement that checks for a line break with the parentheses. 
 
@@ -24,4 +24,4 @@ Here is the screenshot of the results:
 
 For my implementation, I think the bug with the code is that it doesn't check recognize ``<>`` (the two carrots) as valid characters inside the parentheses. I think some of my checks might be a bit too strict, so I would need to tinker with that I expect to fix some of my code here:
 
-![](fix_second_where.JPG)
+![](fix_fourth_where.JPG)
