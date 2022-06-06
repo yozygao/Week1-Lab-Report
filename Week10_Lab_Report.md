@@ -7,10 +7,13 @@ I told remote computer to write all the results of the tests into a txt file cal
 I believe my version of MarkdownParse is correct because according to the [CommonMark Demo Site](https://spec.commonmark.org/dingus/), the text in the md file is not a link. The preview shown on the website is ``[link]()``. The expected result should ``[]``
 
  Here is the screenshot of the results:
+ 
 ![](test493.JPG)
+
 The left side is the given MarkdownParse's result and the right is my personal MarkdownParse. This will be the same for any other screenshot that is meant to compare the two results. 
 
 For the given implementation, I think the bug with the code is that it doesn't check whether there is a line break or not when making a link. Though I'm not sure how check for a line break, you most likely have to check for it at the end. I suggest checking it here
+
 ![](fix_third_where.JPG)
 
 right before the else statement and adding an if statement that checks for a line break with the parentheses. 
