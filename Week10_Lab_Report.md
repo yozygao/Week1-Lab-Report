@@ -23,6 +23,7 @@ right before the else statement and adding an if statement that checks for a lin
 I believe the given implementation is correct because my code doesn't register the text in the md file as a link. It is a link once again according to the  [CommonMark Demo Site](https://spec.commonmark.org/dingus/). The preview shown on the website is ``link``. The expected result should ``[<foo(and(bar]``.
 
 Here is the screenshot of the results:
+
 ![](test498.JPG)
 
 For my implementation, I think the bug with the code is that it doesn't check recognize ``<>`` (the two carrots) as valid characters inside the parentheses. I think some of my checks might be a bit too strict, so I would need to tinker with that I expect to fix some of my code here:
